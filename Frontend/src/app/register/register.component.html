@@ -1,0 +1,34 @@
+  <div class="body col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4" style="margin-top : 50px;">
+
+      <form #f="ngForm" (ngSubmit)="Register(f)" class="form-horizontal">
+          <div class="panel panel-default" style="background-color: rgb(24, 20, 20);">
+              <div class="panel-body">
+                  <div class="col-xs-10 col-xs-offset-1">
+                      <h2 style="text-align: center; margin-bottom : 30px; color:white;">REGISTER FORM</h2>
+                      <div class="form-group">
+                          <label>YOUR NAME</label>
+                          <input type="text" class="form-control" placeholder="Name" name="name" ngModel>
+                          <br>
+                      </div>
+                      <div class="form-group">
+                          <label>YOUR EMAIL ADDRESS</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" name="email" ngModel>
+                          <br>
+                      </div>
+                      <div class="form-group">
+                          <label>CREATE YOUR PASSWORD</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" ngModel>
+                          <br>
+                      </div>
+                  </div>
+                  <div>
+                      <button type="submit" class="button col-xs-10 col-xs-offset-1">SIGN UP</button>
+                  </div>
+                  <div class="col-xs-10 col-xs-offset-1" style="color: white; font-weight: 100px; margin-top: 20px;">
+                      <input type="checkbox" (change)="checkboxChecked($event)">&nbsp;I agree to the Term of Service<br>
+                  </div>
+              </div>
+          </div>
+      </form>
+
+  </div>
